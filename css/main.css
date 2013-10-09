@@ -1,0 +1,64 @@
+/*
+   index.html
+   
+   Copyright 2013
+   Sergio Navarrete Suárez <shnavarretes@correo.udistrital.edu.co>
+   Luisa Vélez <lcvelezh@correo.udistrital.edu.co>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+*/
+
+body {
+	/* background-image: url(img/indexbg.png); */
+	background-color: #AAA;
+}
+
+.inst_box {
+	height: 425px;
+	width: 350px;
+	background-color: #FFF;
+	border: 1px solid black;
+	
+	position: absolute;
+}
+
+#inst_box_encuadre {
+	transform:rotate(-20deg);
+	-ms-transform:rotate(-20deg); /* IE 9 */
+	-webkit-transform:rotate(-20deg); /* Safari and Chrome */
+	right: 590px;
+}
+
+#inst_box_foco {
+	transform:rotate(-5deg);
+	-ms-transform:rotate(-5deg); /* IE 9 */
+	-webkit-transform:rotate(-5deg); /* Safari and Chrome */
+	right: 320px;
+}
+
+#inst_box_profcampo {
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg); /* IE 9 */
+	-webkit-transform:rotate(15deg); /* Safari and Chrome */
+	right: 80px;
+}
+
+.inst_img {
+	margin: 5.715%;
+}
+
