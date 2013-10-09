@@ -24,8 +24,17 @@
 */
 
 body {
-	/* background-image: url(img/indexbg.png); */
-	background-color: #AAA;
+	background: url(../img/escritorio.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#inst_grp {
+	position: absolute;
+	right: 0%;
+	top: 0%;
 }
 
 .inst_box {
@@ -33,32 +42,36 @@ body {
 	width: 350px;
 	background-color: #FFF;
 	border: 1px solid black;
-	
 	position: absolute;
+	-webkit-box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 #inst_box_encuadre {
-	transform:rotate(-20deg);
-	-ms-transform:rotate(-20deg); /* IE 9 */
-	-webkit-transform:rotate(-20deg); /* Safari and Chrome */
-	right: 590px;
+	transform:rotate(-24deg);
+	-ms-transform:rotate(-24deg); /* IE 9 */
+	-webkit-transform:rotate(-24deg); /* Safari and Chrome */
+	right: 500px;
 }
 
 #inst_box_foco {
-	transform:rotate(-5deg);
-	-ms-transform:rotate(-5deg); /* IE 9 */
-	-webkit-transform:rotate(-5deg); /* Safari and Chrome */
-	right: 320px;
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg); /* IE 9 */
+	-webkit-transform:rotate(20deg); /* Safari and Chrome */
+	right: 44px;
 }
 
 #inst_box_profcampo {
-	transform:rotate(15deg);
-	-ms-transform:rotate(15deg); /* IE 9 */
-	-webkit-transform:rotate(15deg); /* Safari and Chrome */
-	right: 80px;
+	transform:rotate(-35deg);
+	-ms-transform:rotate(-35deg); /* IE 9 */
+	-webkit-transform:rotate(-35deg); /* Safari and Chrome */
+	right: 271px;
+	top: 263px;
 }
 
 .inst_img {
 	margin: 5.715%;
+	width: 310px;
+	height: 310px;
 }
 
