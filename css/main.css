@@ -23,6 +23,17 @@
    
 */
 
+/* Font faces */
+
+@font-face
+{
+font-family: kite;
+src: url('../font/kite/KiteOne-Regular.ttf')
+    ,url('../font/kite/KiteOne-Regular.eot'); /* IE9 */
+}
+
+/* End of font faces */
+
 body {
 	background: url(../img/escritorio.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -38,40 +49,106 @@ body {
 }
 
 .inst_box {
-	height: 425px;
-	width: 350px;
+	height: 255px;
+	width: 210px;
 	background-color: #FFF;
 	border: 1px solid black;
 	position: absolute;
-	-webkit-box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
-	box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 #inst_box_encuadre {
-	transform:rotate(-24deg);
-	-ms-transform:rotate(-24deg); /* IE 9 */
-	-webkit-transform:rotate(-24deg); /* Safari and Chrome */
-	right: 500px;
+	transform:rotate(-5deg);
+	-ms-transform:rotate(-5deg); /* IE 9 */
+	-webkit-transform:rotate(-5deg); /* Safari and Chrome */
+	right: 419px;
+	top: 19px;
 }
 
 #inst_box_foco {
-	transform:rotate(20deg);
-	-ms-transform:rotate(20deg); /* IE 9 */
-	-webkit-transform:rotate(20deg); /* Safari and Chrome */
-	right: 44px;
+	transform:rotate(14deg);
+	-ms-transform:rotate(14deg); /* IE 9 */
+	-webkit-transform:rotate(14deg); /* Safari and Chrome */
+	right: 68px;
+	top: 45px;
 }
 
 #inst_box_profcampo {
-	transform:rotate(-35deg);
-	-ms-transform:rotate(-35deg); /* IE 9 */
-	-webkit-transform:rotate(-35deg); /* Safari and Chrome */
-	right: 271px;
-	top: 263px;
+	transform:rotate(-25deg);
+	-ms-transform:rotate(-25deg); /* IE 9 */
+	-webkit-transform:rotate(-25deg); /* Safari and Chrome */
+	right: 228px;
+	top: 175px;
 }
 
-.inst_img {
-	margin: 5.715%;
-	width: 310px;
-	height: 310px;
+.inst_box img {
+	margin: 5.7%;
+	width: 88.6%;
+	height: 72.95%;
+}
+
+.inst_box span {
+	font-family: kite;
+	margin-left: 8%;
+}
+
+#inst_box_foco span {
+	margin-left: 60%;
+}
+
+#roll_grp {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+}
+
+#roll {
+	background: url(../img/photoroll.svg);
+	background-size: 100%;
+	width: 246px;
+	height: 120px;
+	position: absolute;
+	left: 80px;
+	bottom: 110px;
+	transform:rotate(34deg);
+	-ms-transform:rotate(34deg); /* IE 9 */
+	-webkit-transform:rotate(34deg); /* Safari and Chrome */
+}
+
+#postit {
+	background-color: #F2E37B;
+	height: 260px;
+	width: 260px;
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg); /* IE 9 */
+	-webkit-transform:rotate(15deg); /* Safari and Chrome */
+	z-index: -1;
+}
+
+#postit span {
+	font-family: kite;
+	font-size: 150%;
+	position: relative;
+	bottom: -62%;
+	left: 8%;
+}
+
+#roll img {
+	width: 44.8%;
+}
+
+#neg1 {
+	margin-left: 3.6%;
+	margin-top: 6.5%;
+}
+
+#neg2 {
+	margin-left: 0.3%;
+}
+
+/** General **/
+/* Shadow */
+.shad {
+	-webkit-box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
