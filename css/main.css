@@ -98,9 +98,8 @@ body {
 
 .pencils span {
 	position: relative;
-	top: -3%;
 	left: 60%;
-	color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.8);
 }
 
 #eraser {
