@@ -34,6 +34,30 @@ src: url('../font/kite/KiteOne-Regular.ttf')
 
 /* End of font faces */
 
+/** General **/
+/* Shadow */
+.shad_s {
+	-webkit-box-shadow:  0px 0px 2px rgba(0, 0, 0, 0.8);
+	box-shadow:  0px 0px 2px rgba(0, 0, 0, 0.8);
+}
+.shad_m {
+	-webkit-box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.8);
+	box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+.shad_l {
+	-webkit-box-shadow:  0px 0px 7px rgba(0, 0, 0, 0.8);
+	box-shadow:  0px 0px 7px rgba(0, 0, 0, 0.8);
+}
+
+.shad_dr {
+	-webkit-filter: drop-shadow(0px 0px 7px rgba(0,0,0,0.8));
+}
+
+span {
+	font-family: kite;
+}
+/** End of general **/
+
 body {
 	background: url(../img/escritorio.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -42,7 +66,68 @@ body {
 	background-size: cover;
 }
 
-#inst_grp {
+#pencils {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+
+.pencils {
+	width: 450px;
+	height: 23px;
+	position:absolute;
+}
+
+#pencil_black {
+	background: url(../img/lapiz_n.svg);
+	top: 71px;
+	left: -15px;
+	transform:rotate(5deg);
+	-ms-transform:rotate(5deg); /* IE 9 */
+	-webkit-transform: rotate(5deg); /* Safari and Chrome */
+}
+
+#pencil_red {
+	background: url(../img/lapiz_r.svg);
+	top: 41px;
+	left: -25px;
+	transform:rotate(-11deg);
+	-ms-transform:rotate(-11deg); /* IE 9 */
+	-webkit-transform: rotate(-11deg); /* Safari and Chrome */
+}
+
+.pencils span {
+	position: relative;
+	top: -3%;
+	left: 60%;
+	color: #FFFFFF;
+}
+
+#eraser {
+	background-color: #D35539;
+	width: 100px;
+	height: 65px;
+	position: absolute;
+	left: 73px;
+	top: 113px;
+	border-radius: 10px;
+	transform:rotate(-9deg);
+	-ms-transform:rotate(-9deg); /* IE 9 */
+	-webkit-transform: rotate(-9deg); /* Safari and Chrome */
+}
+
+#eraser span {
+	color: #D35539;
+	position: relative;
+	top: 34%;
+	text-align: center;
+	margin: auto;
+	display: block;
+	text-shadow: -1px -1px 1px #7A1600, 1px 1px 1px #E9684B;
+	font-weight: bold;
+}
+
+#insts {
 	position: absolute;
 	right: 0%;
 	top: 0%;
@@ -52,7 +137,6 @@ body {
 	height: 255px;
 	width: 210px;
 	background-color: #FFF;
-	border: 1px solid black;
 	position: absolute;
 }
 
@@ -87,7 +171,6 @@ body {
 }
 
 .inst_box span {
-	font-family: kite;
 	margin-left: 8%;
 }
 
@@ -104,9 +187,9 @@ body {
 #roll {
 	background: url(../img/photoroll.svg);
 	background-size: 100%;
+	position: absolute;
 	width: 246px;
 	height: 120px;
-	position: absolute;
 	left: 80px;
 	bottom: 110px;
 	transform:rotate(34deg);
@@ -125,7 +208,6 @@ body {
 }
 
 #postit span {
-	font-family: kite;
 	font-size: 150%;
 	position: relative;
 	bottom: -62%;
@@ -144,11 +226,3 @@ body {
 #neg2 {
 	margin-left: 0.3%;
 }
-
-/** General **/
-/* Shadow */
-.shad {
-	-webkit-box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
-	box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.4);
-}
-
