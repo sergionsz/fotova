@@ -36,14 +36,18 @@
 <body>
 	<!-- Pencils -->
 	<div id="pencils">
-		<div id="pencil_red" class="pencils shad_dr">
+		<div id="pencil_red" class="pencil shad_dr">
 			<span>Créditos</span>
 		</div>
-		<div id="pencil_black" class="pencils shad_dr">
+		<div id="pencil_black" class="pencil shad_dr">
 			<span>Licencia</span>
 		</div>
-		<div id="eraser" class=" shad_l">
-			<span>INICIO</span>
+		<!-- Next div added so that the eraser doesn't get rotated on mouseover
+			 I hope that this is a temporal fix and I'll be able to solve it somehow =/ -->
+		<div class="link">
+			<div id="eraser" class=" shad_l">
+				<span>INICIO</span>
+			</div>
 		</div>
 	</div>
 	<!-- End of pencils -->
@@ -64,7 +68,7 @@
 	</div>
 	<!-- End of polaroids -->
 	<!-- Photo roll -->
-	<div id="roll_grp">
+	<div id="roll_grp" class="link">
 		<div id="postit" class="shad_s">
 			<span>La composición en la fotografía</span>
 		</div>
@@ -74,6 +78,15 @@
 		</div>
 	</div>
 	<!-- End of photo roll -->
+	<!-- Sheet -->
+	<div id="sheet" class="shad_s">
+	</div>
+	<!-- End of Sheet -->
+	<!-- Scripts -->
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+	<!-- End of scripts -->
 </body>
 
 </html>
