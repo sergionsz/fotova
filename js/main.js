@@ -1,5 +1,5 @@
 /*
-   index.html
+   main.html
    
    Copyright 2013
    Sergio Navarrete Suárez <shnavarretes@correo.udistrital.edu.co>

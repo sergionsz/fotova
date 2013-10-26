@@ -1,5 +1,5 @@
 /*
-   index.html
+   main.css
    
    Copyright 2013
    Sergio Navarrete Suárez <shnavarretes@correo.udistrital.edu.co>
@@ -279,4 +279,35 @@ body {
 	top: 30%;
 }
 /* End of sheet */
+
+/* Focus activity */
+.grey_area {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	opacity:0.7;
+}
+
+.focus_photo {
+	position:absolute;
+	top:10%;
+	left:20%;
+	width:60%;
+}
+
+#focus_main_photo {
+	opacity:0;
+}
+
+#focus_activity input[type="range"] {
+	position: relative;
+	
+}
+
+
+/* End of focus activity */
+
 /** End of objects **/
