@@ -298,18 +298,26 @@ body {
 	width:90%;
 }
 
-#focus_main_photo {
+#focus_photo_main {
 	opacity:0;
 }
 
 #focus_control {
 	position:absolute;
-	left: 20%;
-	top: 20%
+	left: 5%;
+	top: 10%;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.7);
+	width: 50%;
 }
 
 #focus_control label {
-	
+	color:white;
+	margin: 0 2%;
+}
+
+#focus_control input {
+	width: 80%;
 }
 
 /* End of focus activity */
