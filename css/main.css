@@ -299,25 +299,35 @@ body {
 }
 
 #focus_photo_main {
-	opacity:0;
+	display:none;
+}
+
+.control {
+	padding: 10px;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.control label {
+	color:white;
+	margin: 0 2%;
 }
 
 #focus_control {
 	position:absolute;
 	left: 5%;
 	top: 10%;
-	padding: 10px;
-	background-color: rgba(0,0,0,0.7);
 	width: 50%;
-}
-
-#focus_control label {
-	color:white;
-	margin: 0 2%;
 }
 
 #focus_control input {
 	width: 80%;
+}
+
+#show_general {
+	position:absolute;
+	right: 5%;
+	top: 10%;
+	width: 12%;
 }
 
 /* End of focus activity */

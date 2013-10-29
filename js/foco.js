@@ -28,19 +28,25 @@ OP_DELTA=1/OP_DIV
 
 $(document).ready(function() {
 	$("#focus_control input").change(changeFocus);
+	$("#focus_control input").val(OP_DIV).change();
+	$("#show_general input").change(showGeneral);
+	
 });
 
 function changeFocus () {
 	focus = $(this).val();
 	switch(true) {
-		case focus<=OP_DIV:
+		case focus<=OP_DIV+1:
 			opacity=1-OP_DELTA*focus;
 			$("#focus_photo_4").css('opacity',opacity);
+			$("#focus_photo_3").css('opacity',1);
+			$("#focus_photo_2").css('opacity',1);
 			break;
 		case focus>OP_DIV && focus<=OP_DIV*2:
 			opacity=1-OP_DELTA*(focus-20);
 			$("#focus_photo_4").css('opacity',0);
 			$("#focus_photo_3").css('opacity',opacity);
+			$("#focus_photo_2").css('opacity',1);
 			break;
 		case focus>OP_DIV*2 && focus<=OP_DIV*3:
 			opacity=1-OP_DELTA*(focus-40);
@@ -48,5 +54,16 @@ function changeFocus () {
 			$("#focus_photo_3").css('opacity',0);
 			$("#focus_photo_2").css('opacity',opacity);
 			break;
+	}
+}
+
+function showGeneral () {
+	var ch = $("#show_general input").prop('checked');
+	var photo = $("#focus_photo_main");
+	effect = 'fade';
+	if (ch){
+		photo.show(effect);
+	} else {
+		photo.hide(effect);
 	}
 }
