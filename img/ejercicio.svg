@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="165.967"
+   height="30.366999"
+   viewBox="0 0 165.96699 30.367"
+   enable-background="new 0 0 167.828 32.114"
+   xml:space="preserve"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="ejercicio.svg"><metadata
+   id="metadata25"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs23">
+	
+
+		
+		
+	
+	
+	
+</defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1538"
+   inkscape:window-height="880"
+   id="namedview21"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="1.9305479"
+   inkscape:cx="1.7973067"
+   inkscape:cy="13.368627"
+   inkscape:window-x="59"
+   inkscape:window-y="-3"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<polyline
+   points="166.524,-0.121 166.72,26.449 160.927,24.387 158.11,27.502 152.366,26.547 147.224,28.888     141.228,27.637 132.745,29.272 129.468,27.553 124.202,29.309 121.175,27.885 118.958,28.944 115.277,27.973 109.104,29.888     103.725,28.444 98.347,27.002 91.847,29.143 84.733,27.492 80.377,29.091 76.73,27.858 71.795,29.39 67.861,28.121 57.121,27.097     52.109,29.148 45.338,26.898 38.552,29.002 36.215,26.862 30.006,25.927 25.503,27.785 22.543,26.622 20.614,27.721     13.944,29.042 9.471,27.444 3.763,30.211 0.781,29.913 0.753,-0.067 24.606,-0.09 52.55,-0.119 93.199,-0.156   "
+   id="polyline9"
+   style="fill:#f9f29d"
+   transform="translate(-0.75300561,0.156)" />
+<g
+   id="g3011"
+   transform="translate(-1.9193053,0.156)"><text
+     y="20.043554"
+     x="23.773661"
+     transform="matrix(0.99997112,-0.00759978,0.00759978,0.99997112,0,0)"
+     font-size="22"
+     id="text13"
+     style="font-size:22.00063515px;fill:#050505;font-family:Chalkboard">Ejercicio</text>
+<g
+     transform="translate(2.0000001,-4.0000002)"
+     id="g15">
+		<path
+   d="m 130.104,14.375 c -1.662,0.004 -3.004,1.354 -2.998,3.014 0,1.66 1.351,3.002 3.012,3 1.658,-0.004 2.999,-1.354 2.997,-3.014 -0.005,-1.662 -1.354,-3.002 -3.011,-3 z"
+   id="path17"
+   inkscape:connector-curvature="0" />
+		<path
+   d="m 141.816,12.283 -0.002,-0.943 c -0.002,-0.992 -0.816,-1.801 -1.808,-1.799 l -13.515,0.031 -0.004,-2.68 -4.733,0.012 0.004,2.678 -1.585,0.006 c -0.99,0 -1.8,0.816 -1.795,1.807 l 0.026,12.027 c 0.002,0.992 0.815,1.803 1.809,1.799 l 19.83,-0.045 c 0.993,-0.002 1.803,-0.816 1.8,-1.807 l -0.02,-8.758 -4.426,0.014 -0.004,-2.332 4.423,-0.01 z m -11.695,10.172 c -2.8,0.006 -5.077,-2.262 -5.083,-5.062 -0.007,-2.801 2.26,-5.074 5.062,-5.08 2.797,-0.006 5.075,2.256 5.082,5.059 0.007,2.798 -2.261,5.075 -5.061,5.083 z"
+   id="path19"
+   inkscape:connector-curvature="0" />
+	</g></g>
+</svg>

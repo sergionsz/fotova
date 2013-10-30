@@ -25,11 +25,16 @@
 
 /* Font faces */
 
-@font-face
-{
+@font-face {
 font-family: kite;
 src: url('../font/kite/KiteOne-Regular.ttf')
     ,url('../font/kite/KiteOne-Regular.eot'); /* IE9 */
+}
+
+@font-face {
+font-family: arch_daughter;
+src: url('../font/arch_daughter/ArchitectsDaughter.ttf')
+    ,url('../font/arch_daughter/ArchitectsDaughter.eot'); /* IE9 */
 }
 
 /* End of font faces */
@@ -49,8 +54,11 @@ src: url('../font/kite/KiteOne-Regular.ttf')
 	box-shadow:  0px 0px 7px rgba(0, 0, 0, 0.8);
 }
 
-.shad_dr {
+.shad_drop {
 	-webkit-filter: drop-shadow(0px 0px 7px rgba(0,0,0,0.8));
+}
+.shad_drop_s {
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(0,0,0,0.8));
 }
 
 .link {
@@ -58,14 +66,28 @@ src: url('../font/kite/KiteOne-Regular.ttf')
 }
 
 .link_over {
-	transform: scale(1.2,1.2);
-	-ms-transform: scale(1.2,1.2); /* IE 9 */
-	-webkit-transform: scale(1.2,1.2); /* Safari and Chrome */
+	z-index:4;
 }
 
 span, label {
 	font-family: kite;
 }
+
+span.bubble_icon{
+	background: url(../img/bubble.png) no-repeat 23%;
+}
+span.play_icon{
+	background: url(../img/play.png) no-repeat 23%;
+}
+span.vcam_icon{
+	background: url(../img/vcam.png) no-repeat 23%;
+}
+
+.contain {
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 /** End of general classes **/
 
 body {
@@ -271,8 +293,7 @@ body {
 	background-size:100%;
 	position: absolute;
 	left: 20%;
-	top: -200%;
-	
+	top: -200%;	
 }
 
 #sheet.comp {
@@ -280,7 +301,103 @@ body {
 }
 /* End of sheet */
 
+/* Contact sheet */
+#contact_sheet {
+	background: url(../img/contacto.svg);
+	width: 950px;
+	height: 672px;
+	background-size:100%;
+	position: absolute;
+	left: 20%;
+	bottom: -200%;
+	transform:rotate(-2deg);
+	-ms-transform:rotate(-2deg); /* IE 9 */
+	-webkit-transform:rotate(-2deg); /* Safari and Chrome */
+}
+
+#contact_sheet.focus{
+	bottom:-3%;
+}
+
+#exerc_label {
+	right: -1%;
+	position: absolute;
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg); /* IE 9 */
+	-webkit-transform: rotate(15deg);
+	z-index:2;
+}
+
+.contact_photo {
+	height: 38.5%;
+	width: 27.5%;
+	margin: 2.6% -3.5% 0.7% 6.1%;
+	float: left;
+	background-size:cover;
+}
+
+.contact_photo.opaque_3:before {
+	content:"";
+	opacity:0.3;
+	height: 38.5%;
+	width: 27.5%;
+	position: absolute;
+	background-size:cover;
+}
+
+#cf1:before {
+	background-image: url(../img/foco/foco1.jpg);
+}
+#cf2 {
+	background-image: url(../img/foco/ejemplo1.jpg);
+	background-position: 83%;
+}
+#cf3:before {
+	background-image: url(../img/foco/foco2.jpg);
+}
+#cf4 {
+	background-image: url(../img/foco/ejemplo2.jpg);
+	background-position: 27%;
+}
+#cf5:before {
+	background-image: url(../img/foco/foco3.jpg);
+}
+#cf6 {
+	background-image: url(../img/foco/ejemplo3.jpg);
+	background-position: 54%;
+}
+#cf7 {
+	background-image: url(../img/foco/foco4.jpg);
+}
+#cf8 {
+	background-image: url(../img/foco/foco5.jpg);
+}
+#cf9 {
+	background-image: url(../img/foco/foco6.jpg);
+}
+
+#contact_sheet span{
+	font-family: arch_daughter;	
+	z-index: 2;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	margin: 84% auto;
+	font-size: 130%;
+	display: block;
+}
+
+/* End of contact sheet */
+
 /* Focus activity */
+#focus_activity {
+	display:none;
+}
+
+#focus_activity.activ_focus_grey {
+	display:inline;
+}
+
 .grey_area {
 	width: 100%;
 	height: 100%;
@@ -289,6 +406,7 @@ body {
 	left: 0px;
 	background-color: #000;
 	opacity:0.7;
+	z-index: inherit;
 }
 
 #focus_photos img {

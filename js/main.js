@@ -24,18 +24,13 @@
 */
 
 /* This object is a list of dom objecs ids and the screens they fire */
-links = {
-	'eraser':'pres',
-	'roll_grp':'comp'
-}
 
 current_screen = '';
+prev_screen = '';
 
 $(document).ready(function() {
 	/* Add to links function that changes screen on click */
-	$.each(links,function(key,value){
-		$('#'+key).click({screen:value},changeScreen);
-	});
+	$('.link').click(changeScreen);
 	
 	/* Add behavior to make links bigger on mouseover */
 	$('.link').hover(
@@ -44,19 +39,24 @@ $(document).ready(function() {
 	);
 	/* Added to change to presentation screen */
 	changeScreen('pres');
-}); 
+});
 
 /* Function to change the screen in a cool animated way */
-function changeScreen(event) {
-	if (typeof event ===  'string'){
-		$('body').children().addClass(event,2000,'swing');
-		current_screen = event;
-		return;
+function changeScreen(screen) {
+	if (typeof screen == 'string' && screen == 'pres'){
+		$('body').children().addClass(screen,2000,'swing');
+	} else {
+		screen = $(this).attr('link');
+		if (screen == current_screen) {return;}
+		if (screen == 'ungrey') {
+			$('body').children().removeClass(current_screen);
+			screen = prev_screen;
+		} else if (screen.indexOf('grey') != -1){
+			$('body').children().addClass(screen);
+		} else {
+			$('body').children().switchClass(current_screen,screen,2000,'swing');
+		}
 	}
-	var screen=event.data.screen;
-	if (screen == current_screen) {
-		return;
-	}
-	$('body').children().switchClass(current_screen,screen,2000,'swing');
+	prev_screen = current_screen;
 	current_screen = screen;
 }

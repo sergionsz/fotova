@@ -42,12 +42,8 @@
 		<div id="pencil_black" class="pencil shad_dr">
 			<span>Licencia</span>
 		</div>
-		<!-- Next div added so that the eraser doesn't get rotated on mouseover
-			 I hope that this is a temporal fix and I'll be able to solve it somehow =/ -->
-		<div class="link">
-			<div id="eraser" class=" shad_l">
-				<span>INICIO</span>
-			</div>
+		<div id="eraser" class=" shad_l link" link="pres">
+			<span>INICIO</span>
 		</div>
 	</div>
 	<!-- End of pencils -->
@@ -57,7 +53,7 @@
 			<img src="img/encuadre.jpg" alt="" title="" />
 			<span>Encuadre</span>
 		</div>
-		<div id="inst_box_foco" class="inst_box shad_s">
+		<div id="inst_box_foco" class="inst_box shad_s link" link="focus">
 			<img src="img/enfoque.jpg" alt="" title="" />
 			<span>Enfoque</span>
 		</div>
@@ -68,7 +64,7 @@
 	</div>
 	<!-- End of polaroids -->
 	<!-- Photo roll -->
-	<div id="roll_grp" class="link">
+	<div id="roll_grp" class="link" link="comp">
 		<div id="postit" class="shad_s">
 			<span>La composición en la fotografía</span>
 		</div>
@@ -82,9 +78,23 @@
 	<div id="sheet" class="shad_s">
 	</div>
 	<!-- End of Sheet -->
+	<!-- Contact sheet -->
+	<div id="contact_sheet" class="shad_s">
+		<img src="img/ejercicio.svg" id="exerc_label" class="shad_drop_s" alt="" title="" />
+		<div class="contact_photo opaque_3" id="cf1"><span class="bubble_icon">Definición</span></div>
+		<div class="contact_photo" id="cf2"></div>
+		<div class="contact_photo opaque_3 link" id="cf3" link="activ_focus_grey"><span class="play_icon">Actividad</span></div>
+		<div class="contact_photo" id="cf4"></div>
+		<div class="contact_photo opaque_3" id="cf5"><span class="vcam_icon">Video</span></div>
+		<div class="contact_photo" id="cf6"></div>
+		<div class="contact_photo contain" id="cf7"></div>
+		<div class="contact_photo contain" id="cf8"></div>
+		<div class="contact_photo contain" id="cf9"></div>
+	</div>
+	<!-- End of contact sheet -->
 	<!-- Activity focus -->
 	<div id="focus_activity">
-		<div class="grey_area"></div>
+		<div class="grey_area link" link="ungrey"></div>
 		<div id="focus_photos">
 			<img src="img/foco/profundidad-4.jpg" id="focus_photo_1" class="focus_photo" alt="" title="" />
 			<img src="img/foco/profundidad-3.jpg" id="focus_photo_2" class="focus_photo" alt="" title="" />
