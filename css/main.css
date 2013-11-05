@@ -26,9 +26,9 @@
 /* Font faces */
 
 @font-face {
-font-family: kite;
-src: url('../font/kite/KiteOne-Regular.ttf')
-    ,url('../font/kite/KiteOne-Regular.eot'); /* IE9 */
+font-family: actor;
+src: url('../font/actor/Actor-Regular.ttf')
+    ,url('../font/actorActor-Regular.eot'); /* IE9 */
 }
 
 @font-face {
@@ -42,16 +42,16 @@ src: url('../font/arch_daughter/ArchitectsDaughter.ttf')
 /** General classes **/
 /* Shadow */
 .shad_s {
-	-webkit-box-shadow:  0px 0px 2px rgba(0, 0, 0, 0.8);
-	box-shadow:  0px 0px 2px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow:  0px 0px 2px 1px rgba(0, 0, 0, 0.8);
+	box-shadow:  0px 0px 2px 1px rgba(0, 0, 0, 0.8);
 }
 .shad_m {
-	-webkit-box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.8);
-	box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+	box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.8);
 }
 .shad_l {
-	-webkit-box-shadow:  0px 0px 7px rgba(0, 0, 0, 0.8);
-	box-shadow:  0px 0px 7px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, 0.8);
+	box-shadow:  0px 0px 7px 1px rgba(0, 0, 0, 0.8);
 }
 
 .shad_drop {
@@ -70,22 +70,36 @@ src: url('../font/arch_daughter/ArchitectsDaughter.ttf')
 }
 
 span, label {
-	font-family: kite;
+	font-family: arch_daughter;
 }
 
 span.bubble_icon{
-	background: url(../img/bubble.png) no-repeat 23%;
+	background: url(../img/bubble.png) no-repeat 15%;
 }
 span.play_icon{
-	background: url(../img/play.png) no-repeat 23%;
+	background: url(../img/play.png) no-repeat 19%;
 }
 span.vcam_icon{
-	background: url(../img/vcam.png) no-repeat 23%;
+	background: url(../img/vcam.png) no-repeat 24%;
 }
 
-.contain {
+div.contain {
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+h2 {
+	font-family: arch_daughter;
+}
+
+h2 {
+	font-family: actor;
+}
+
+.text_block {
+	height: 90%;
+	margin: 5%;
+	overflow-y: scroll;
 }
 
 /** End of general classes **/
@@ -105,6 +119,7 @@ body {
 	position: absolute;
 	left: 0%;
 	top: 0%;
+	z-index:3;
 }
 
 .pencil {
@@ -133,7 +148,7 @@ body {
 
 .pencil span {
 	position: relative;
-	left: 60%;
+	left: 50%;
 	color: rgba(255, 255, 255, 0.8);
 }
 
@@ -159,6 +174,7 @@ body {
 	display: block;
 	text-shadow: 0px 1px 1px #FF613D;
 	font-weight: bold;
+	font-size: 120%;
 }
 /* End of pencils */
 
@@ -220,6 +236,108 @@ body {
 }
 /* End of Instants */
 
+/* Credits */
+#luisa {
+	width: 60%;
+	position: absolute;
+	right: -100%;
+	top: -100%;
+}
+
+#luisa.credits {
+	right: 10%;
+	top: 10%;
+}
+
+#luisa .credits_photo {
+	float: right;
+	transform:rotate(11deg);
+	-ms-transform:rotate(11deg); /* IE 9 */
+	-webkit-transform:rotate(11deg); /* Safari and Chrome */
+}
+
+#sergio {
+	width: 60%;
+	position: absolute;
+	bottom: -100%;
+	left: -100%;
+}
+
+#sergio.credits {
+	bottom: 10%;
+	left: 10%;
+}
+
+#sergio .credits_photo {
+	position: absolute;
+	bottom: 14%;
+	left: -4%;
+	transform:rotate(11deg);
+	-ms-transform:rotate(11deg); /* IE 9 */
+	-webkit-transform:rotate(11deg); /* Safari and Chrome */
+}
+
+.credits_photo {
+	position: relative;
+	z-index: 2;
+}
+
+.credits_card {
+	padding: 4% 0% 0% 4%;
+	background-image: url(../img/card.svg);
+	background-size: 100%;
+	transform:rotate(-16deg);
+	-ms-transform:rotate(-16deg); /* IE 9 */
+	-webkit-transform:rotate(-16deg); /* Safari and Chrome */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 24%;
+	width: 46%;
+	height: 68%;
+}
+
+.credits_card_wrapper {
+	padding-bottom: 44%;
+	position: relative;
+}
+
+.credits_card span {
+	font-weight: bold;
+	color: #ff4e00;
+}
+
+.credits_card .email {
+	color: #666;
+	position: relative;
+	left: 15%;
+}
+
+#cc_logo {
+	background-image: url(../img/by-sa.svg);
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0%;
+}
+
+#cc_logo_wrapper {
+	padding-bottom: 8.77%;
+	position: absolute;
+	bottom: -100%;
+	right: -100%;
+	width: 25%;
+}
+
+#cc_logo_wrapper.credits {
+	bottom: 5%;
+	right: 5%;
+}
+/* End of credits */
+
 /* Roll group */
 #roll_grp {
 	position: absolute;
@@ -265,10 +383,10 @@ body {
 }
 
 #postit span {
-	font-size: 150%;
+	font-size: 170%;
 	position: relative;
 	bottom: -62%;
-	left: 8%;
+	left: 4%;
 }
 
 #roll img {
@@ -283,7 +401,7 @@ body {
 #neg2 {
 	margin-left: 0.3%;
 }
-/* End of oll group */
+/* End of roll group */
 
 /* Sheet */
 #sheet {
@@ -299,24 +417,44 @@ body {
 #sheet.comp {
 	top: 30%;
 }
+
+#sheet h2, #sheet p {
+	margin: 2% 0 0 12% ;
+}
+
+#sheet img {
+	width: 50%;
+	position: absolute;
+	bottom: 20%;
+	left: -38%;
+	transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg); /* IE 9 */
+	-webkit-transform:rotate(-15deg); /* Safari and Chrome */
+}
+
 /* End of sheet */
 
 /* Contact sheet */
 #contact_sheet {
 	background: url(../img/contacto.svg);
-	width: 950px;
-	height: 672px;
 	background-size:100%;
 	position: absolute;
-	left: 20%;
-	bottom: -200%;
+	top: 0; right: 0; left: 0; bottom: 0;
 	transform:rotate(-2deg);
 	-ms-transform:rotate(-2deg); /* IE 9 */
 	-webkit-transform:rotate(-2deg); /* Safari and Chrome */
 }
 
-#contact_sheet.focus{
-	bottom:-3%;
+#contact_sheet_wrapper {
+	padding-bottom: 59.83%;
+	position:absolute;
+	left: 10%;
+	bottom: -200%;
+	width: 85%;
+}
+
+#contact_sheet_wrapper.focus{
+	bottom: -3%;
 }
 
 #exerc_label {
@@ -329,7 +467,7 @@ body {
 }
 
 .contact_photo {
-	height: 38.5%;
+	height: 39%;
 	width: 27.5%;
 	margin: 2.6% -3.5% 0.7% 6.1%;
 	float: left;

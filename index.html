@@ -36,11 +36,11 @@
 <body>
 	<!-- Pencils -->
 	<div id="pencils">
-		<div id="pencil_red" class="pencil shad_dr">
-			<span>Créditos</span>
+		<div id="pencil_red" class="pencil shad_drop link" link="credits">
+			<span>Créditos y Licencia</span>
 		</div>
-		<div id="pencil_black" class="pencil shad_dr">
-			<span>Licencia</span>
+		<div id="pencil_black" class="pencil shad_drop">
+			<span>Bibliografía</span>
 		</div>
 		<div id="eraser" class=" shad_l link" link="pres">
 			<span>INICIO</span>
@@ -76,20 +76,33 @@
 	<!-- End of photo roll -->
 	<!-- Sheet -->
 	<div id="sheet" class="shad_s">
+		<div id="composition_text" class="text_block">
+			<img src="img/ejemplo_comp.jpg" alt="" title="" id="composition_text" />
+			<h2>Introducción</h2>
+			<p>A lo largo de la historia de la humanidad, especialmente en occidente, las imágenes han jugado un papel determinante, ya por medio de estas los pueblos han expresado su visión del mundo y de sí mismos, primero en una instancia mágica y ritual, luego como forma de representar ideales estéticos, sociales e incluso como archivo de lo que debería ser conservado para la eternidad y salvado del paso del tiempo. Ahora las imágenes son parte vital de nuestra vida diaria, sin distinción en las diversas esferas sociales, culturales, políticas, económicas y científicas, lo que quiere decir que estás son parte de cómo nos comunicamos y producimos sentido hoy en día, al punto que podemos hablar de comunicación o lenguaje visual.</p>
+			<h2>Composición</h2>
+			<p>La composición hace referencia a la forma cómo organizamos los elementos en una imagen con el fin de transmitir un mensaje.  Así ese significado esté naturalizado y sea invisible para nosotros. Por consiguiente, el saber de composición nos permite identificar las convenciones culturales por las cuales podemos entender muchos los contenidos que a diario se nos presenta en los distintos medios audiovisuales. Pero así mismo nos brinda poderosas herramientas para la construcción de imágenes con mayor capacidad de comunicación.</p>
+			<h2>Composición fotográfica</h2>
+			<p>Por su naturaleza, es común pensar que la imagen fotográfica es una forma objetiva de representar la realidad, no obstante, aunque el medio sea mecánico y sea hecho por la huella de la luz dejada en un soporte fotosensible, sea este químico o electronico, no quiere decir que la imagen no sea subjetiva y que refleja un particular modo de ver de un individuo, el fotógrafo, quien a su vez está influenciado por  la cultura y la época a la que pertenece.</p>
+			<p>Por consiguiente, a través del punto de vista y el encuadre, el fotógrafo decide qué registrar y qué no, lo que demuestra que hay una mirada, un interés y por ende un significado.  De tal modo que lo que se considera al principio como factores meramente técnicos del hacer fotográfico (encuadre, foco, profundidad de campo, velocidad de obturación, color y material de soporte) son realmente modos o elementos comunicativos que influyen el en sentido transmitido por la foto, que su vez guían el recorrido del observador cuando éste lee la imagen.</p>
+			<p>A continuación examinaremos en detalle tres de los elementos mencionados, (encuadre, foco y profundidad de campo). No obstante, no se hará tanto énfasis en sus características técnicas sino en sus propiedades como modos comunicativos en la composición fotográfica.</p>
+		</div>
 	</div>
 	<!-- End of Sheet -->
 	<!-- Contact sheet -->
-	<div id="contact_sheet" class="shad_s">
-		<img src="img/ejercicio.svg" id="exerc_label" class="shad_drop_s" alt="" title="" />
-		<div class="contact_photo opaque_3" id="cf1"><span class="bubble_icon">Definición</span></div>
-		<div class="contact_photo" id="cf2"></div>
-		<div class="contact_photo opaque_3 link" id="cf3" link="activ_focus_grey"><span class="play_icon">Actividad</span></div>
-		<div class="contact_photo" id="cf4"></div>
-		<div class="contact_photo opaque_3" id="cf5"><span class="vcam_icon">Video</span></div>
-		<div class="contact_photo" id="cf6"></div>
-		<div class="contact_photo contain" id="cf7"></div>
-		<div class="contact_photo contain" id="cf8"></div>
-		<div class="contact_photo contain" id="cf9"></div>
+	<div id="contact_sheet_wrapper">
+		<div id="contact_sheet" class="shad_s">
+			<img src="img/ejercicio.svg" id="exerc_label" class="shad_drop_s" alt="" title="" />
+			<div class="contact_photo opaque_3" id="cf1"><span class="bubble_icon">Definición</span></div>
+			<div class="contact_photo" id="cf2"></div>
+			<div class="contact_photo opaque_3 link" id="cf3" link="activ_focus_grey"><span class="play_icon">Actividad</span></div>
+			<div class="contact_photo" id="cf4"></div>
+			<div class="contact_photo opaque_3" id="cf5"><span class="vcam_icon">Video</span></div>
+			<div class="contact_photo" id="cf6"></div>
+			<div class="contact_photo contain" id="cf7"></div>
+			<div class="contact_photo contain" id="cf8"></div>
+			<div class="contact_photo contain" id="cf9"></div>
+		</div>
 	</div>
 	<!-- End of contact sheet -->
 	<!-- Activity focus -->
@@ -112,6 +125,39 @@
 		</div>
 	</div>
 	<!-- End of activity focus -->
+	<!-- Credits -->
+	<div id="luisa">
+		<div class="credits_photo inst_box">
+			<img src="img/gafas.jpg" alt="" title="" />
+		</div>
+		<div class="credits_card_wrapper">
+			<div class="credits_card">
+				<h2>Luisa Vélez Hurtado</h2>
+				<span>Maestra en Artes Plásticas y Visuales</span><br />
+				<span>Especialista en Fotografía</span><br />
+				<span>Maestrante en Comunicación-Educación</span><br />
+				<span class="email">lcvelezh@udistrital.edu.co</span>
+			</div>
+		</div>
+	</div>
+	<div id="sergio">
+		<div class="credits_card_wrapper">
+			<div class="credits_card">
+				<h2>Sergio Navarrete Suárez</h2>
+				<span>Ingeniería de Sistemas</span><br />
+				<span>Grupo GNU/Linux UD</span><br />
+				<span>Equipo Web - Red de Datos</span><br />
+				<span class="email">shnavarretes@udistrital.edu.co</span>
+			</div>
+		</div>
+		<div class="credits_photo inst_box">
+			<img src="img/sergio.jpg" alt="" title="" />
+		</div>
+	</div>
+	<div id="cc_logo_wrapper">
+		<div id="cc_logo"></div>
+	</div>
+	<!-- End of credits -->
 	<!-- Scripts -->
 	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
 	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
