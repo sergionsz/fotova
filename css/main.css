@@ -609,7 +609,10 @@ body {
 	display: none;
 }
 
-#definition.def_grey {
+#definition.def_grey,
+#definition.exmpl1_grey,
+#definition.exmpl2_grey,
+#definition.exmpl3_grey {
 	display:inline;
 }
 
@@ -627,11 +630,14 @@ body {
 	width: 40%;
 }
 
-#definition.definition_text, #definition img {
+#definition .definition_text, #definition img {
 	display: none;
 }
 
-.focus_def.focus.def_grey {
+.focus_def.focus.def_grey,
+.focus_exmpl1.focus.exmpl1_grey,
+.focus_exmpl2.focus.exmpl2_grey,
+.focus_exmpl2.focus.exmpl3_grey {
 	display: block !important;
 }
 
