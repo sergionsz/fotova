@@ -563,7 +563,7 @@ body {
 	z-index: inherit;
 }
 
-#focus_photos img {
+#focus_activity_photos img {
 	position:absolute;
 	left:5%;
 	top:10%;
@@ -584,22 +584,41 @@ body {
 	margin: 0 2%;
 }
 
-#focus_control {
+#focus_activity_control {
 	position:absolute;
 	left: 5%;
 	top: 10%;
 	width: 50%;
 }
 
-#focus_control input {
+#focus_activity_control input {
 	width: 80%;
 }
 
-#show_general {
+#focus_activity_show_general {
 	position:absolute;
 	right: 5%;
 	top: 10%;
 	width: 12%;
+}
+
+#focus_activity_desc {
+	color: #fff;
+	position: absolute;
+	bottom: 0%;
+	right: 5%;
+	width: 90%;
+	padding: 0;
+	overflow-y: hidden;
+	height: 5%;
+}
+
+#focus_activity_desc:hover {
+	height: 50%;
+}
+
+#focus_activity_desc p {
+	padding: 0 2%;
 }
 
 /* End of focus activity */
