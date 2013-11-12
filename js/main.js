@@ -44,17 +44,17 @@ $(document).ready(function() {
 /* Function to change the screen in a cool animated way */
 function changeScreen(screen) {
 	if (typeof screen == 'string' && screen == 'pres'){
-		$('body').children().addClass(screen,2000,'swing');
+		$('body').find('*').addClass(screen,2000,'swing');
 	} else {
 		screen = $(this).attr('link');
 		if (screen == current_screen) {return;}
 		if (screen == 'ungrey') {
-			$('body').children().removeClass(current_screen);
+			$('body').find('*').removeClass(current_screen);
 			screen = prev_screen;
 		} else if (screen.indexOf('grey') != -1){
-			$('body').children().addClass(screen);
+			$('body').find('*').addClass(screen);
 		} else {
-			$('body').children().switchClass(current_screen,screen,2000,'swing');
+			$('body').find('*').switchClass(current_screen,screen,2000,'swing');
 		}
 	}
 	prev_screen = current_screen;

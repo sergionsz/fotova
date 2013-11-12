@@ -39,8 +39,8 @@
 		<div id="pencil_red" class="pencil shad_drop link" link="credits">
 			<span>Créditos y Licencia</span>
 		</div>
-		<div id="pencil_black" class="pencil shad_drop">
-			<span>Bibliografía</span>
+		<div id="pencil_black" class="pencil shad_drop link" link="bibl">
+			<span>Referencias</span>
 		</div>
 		<div id="eraser" class=" shad_l link" link="pres">
 			<span>INICIO</span>
@@ -87,15 +87,23 @@
 			<p>Por consiguiente, a través del punto de vista y el encuadre, el fotógrafo decide qué registrar y qué no, lo que demuestra que hay una mirada, un interés y por ende un significado.  De tal modo que lo que se considera al principio como factores meramente técnicos del hacer fotográfico (encuadre, foco, profundidad de campo, velocidad de obturación, color y material de soporte) son realmente modos o elementos comunicativos que influyen el en sentido transmitido por la foto, que su vez guían el recorrido del observador cuando éste lee la imagen.</p>
 			<p>A continuación examinaremos en detalle tres de los elementos mencionados, (encuadre, foco y profundidad de campo). No obstante, no se hará tanto énfasis en sus características técnicas sino en sus propiedades como modos comunicativos en la composición fotográfica.</p>
 		</div>
+		<div id="bibl_text" class="text_block">
+			<h2>Referencias Bibliográficas </h2>
+			<p><span class="last_name">Berger</span>, J.(2013). Modos de ver. Mexico: Editorial Gustavo Gili.</p>
+			<p><span class="last_name">Faris</span>, A (2008)  The elements of photography, Understanding and creating sophisticated images. Oxford: Focal Press.</p>
+			<p><span class="last_name">Gubern</span>, R. (1987). La mirada opulenta: Exploración de la iconosfera contemporánea. La revolución Fotográfica  (pp.145-179). Barcelona: Editorial Gustavo Gili, S.A.</p>
+			<p><span class="last_name">Kress</span>, Gunther & van Leeuwen Theo. (1996).Reading Image. The Grammar of Visual Design. Taylor & Francis e-Library, New York, USA.</p>
+			<p><span class="last_name">Webb</span>, Jeremy (2011) Manuales de Fotografía creativa aplicada, Diseño Fotográfico. Barcelona, Editorial Gustavo Gili.</p>
+		</div>		
 	</div>
 	<!-- End of Sheet -->
 	<!-- Contact sheet -->
 	<div id="contact_sheet_wrapper">
 		<div id="contact_sheet" class="shad_s">
 			<img src="img/ejercicio.svg" id="exerc_label" class="shad_drop_s" alt="" title="" />
-			<div class="contact_photo opaque_3" id="cf1"><span class="bubble_icon">Definición</span></div>
+			<div class="contact_photo opaque_3 link" id="cf1" link="def_grey"><span class="bubble_icon">Definición</span></div>
 			<div class="contact_photo" id="cf2"></div>
-			<div class="contact_photo opaque_3 link" id="cf3" link="activ_focus_grey"><span class="play_icon">Actividad</span></div>
+			<div class="contact_photo opaque_3 link" id="cf3" link="activ_grey"><span class="play_icon">Actividad</span></div>
 			<div class="contact_photo" id="cf4"></div>
 			<div class="contact_photo opaque_3" id="cf5"><span class="vcam_icon">Video</span></div>
 			<div class="contact_photo" id="cf6"></div>
@@ -105,6 +113,18 @@
 		</div>
 	</div>
 	<!-- End of contact sheet -->
+	<!-- Definition -->
+	<div id="definition">
+		<div class="grey_area link" link="ungrey"></div>
+		<div class="focus_def definition_text text_block">
+			<h2>Definición de Enfoque</h2>
+			<p>El enfoque en fotografía se refiere al nivel de nitidez de un elemento del encuadre o de la imagen en general. Usualmente se puede utilizar esta cualidad para resaltar un objeto, lo cual se conoce como punto de enfoque, es decir el punto con mayor detalle en la composición y por ende el centro de atención de la mirada del espectador. Así mismo, es habitual que se utilice un desenfoque progresivo (del primer al último plano) para crear la ilusión de profundidad, ya que la fotografía es una imagen bidimensional que crea la sensación de tener tres dimensiones por medio de este tipo de recursos.</p>
+			<p>Se podría afirmar que las imágenes que utilizan la nitidez en su totalidad lo hacen para que sea fácilmente reconocido el tema fotografiado, teniendo un carácter descriptivo y haciendo que el observador otorgue un sentido de realidad y verdad a lo que vé en ellas, como  se percibir en las fotografías documentales o en las usadas en  medios como la prensa. Por el contrario, las fotografías que tienen una falta de nitidez y detalle, se apartan de su referente para distanciar la imagen del mundo visible, volviéndose  un recurso empleado por artistas para darle a la imagen un acento de ensoñación y quitarle el peso de lo real objetivo, resaltando más el carácter expresivo de la fotografía.</p>
+			<p>Hay varios factores técnicos que influyen en el enfoque, tales como, la Apertura del diafragma, la Distancia focal, la Distancia de enfoque y la calidad de los tentes. La apertura del diafragma hace referencia al mecanismo que se utiliza para controlar la cantidad de luz que ingresa a la cámara, en donde los rayos de luz pasan por un circunferencia que cambia de tamaño para dejar pasar más o menos luz según lo necesario. La distancia focal es la longitud de una lente y se expresa en milimetros, 10mm, 50mm, 200mm etc.  Por último, la Distancia de enfoque está determinada por distancia que hay entre el objeto a fotografiar y a la cámara. (en el video se explica con mayor detalle estas características técnicas).</p>
+		</div>
+		<img class="focus_def" src="img/foco/foco1.jpg" alt="" title="" />
+	</div>
+	<!-- End of definition -->
 	<!-- Activity focus -->
 	<div id="focus_activity">
 		<div class="grey_area link" link="ungrey"></div>
@@ -155,7 +175,7 @@
 		</div>
 	</div>
 	<div id="cc_logo_wrapper">
-		<div id="cc_logo"></div>
+		<a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><div id="cc_logo"></div></a>
 	</div>
 	<!-- End of credits -->
 	<!-- Scripts -->

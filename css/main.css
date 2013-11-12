@@ -97,9 +97,9 @@ h2 {
 }
 
 .text_block {
-	height: 90%;
+	height: 75%;
 	margin: 5%;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 /** End of general classes **/
@@ -236,6 +236,75 @@ body {
 }
 /* End of Instants */
 
+/* Roll group */
+#roll_grp {
+	position: absolute;
+	left: -50%;
+	bottom: -100%;
+	right: auto;
+	top: auto;
+}
+
+#roll_grp.pres {
+	left: 10%;
+	bottom: 10%;
+	right: auto;
+	top: auto;
+}
+
+#roll_grp.comp, #roll_grp.bibl {
+	left: 75%;
+	bottom: 60%;
+}
+
+#roll {
+	background: url(../img/photoroll.svg);
+	background-size: 100%;
+	position: absolute;
+	width: 246px;
+	height: 120px;
+	left: 80px;
+	bottom: 110px;
+	transform:rotate(34deg);
+	-ms-transform:rotate(34deg); /* IE 9 */
+	-webkit-transform:rotate(34deg); /* Safari and Chrome */
+}
+
+#postit {
+	background-color: #F2E37B;
+	height: 260px;
+	width: 260px;
+	transform:rotate(15deg);
+	-ms-transform:rotate(15deg); /* IE 9 */
+	-webkit-transform:rotate(15deg); /* Safari and Chrome */
+	z-index: -1;
+}
+
+#postit.bibl {
+	display: none;
+}
+
+#postit span {
+	font-size: 170%;
+	position: relative;
+	bottom: -62%;
+	left: 4%;
+}
+
+#roll img {
+	width: 44.8%;
+}
+
+#neg1 {
+	margin-left: 3.6%;
+	margin-top: 6.5%;
+}
+
+#neg2 {
+	margin-left: 0.3%;
+}
+/* End of roll group */
+
 /* Credits */
 #luisa {
 	width: 60%;
@@ -245,8 +314,8 @@ body {
 }
 
 #luisa.credits {
-	right: 10%;
-	top: 10%;
+	right: 5%;
+	top: 5%;
 }
 
 #luisa .credits_photo {
@@ -286,9 +355,9 @@ body {
 	padding: 4% 0% 0% 4%;
 	background-image: url(../img/card.svg);
 	background-size: 100%;
-	transform:rotate(-16deg);
-	-ms-transform:rotate(-16deg); /* IE 9 */
-	-webkit-transform:rotate(-16deg); /* Safari and Chrome */
+	transform:rotate(-8deg);
+	-ms-transform:rotate(-8deg); /* IE 9 */
+	-webkit-transform:rotate(-8deg); /* Safari and Chrome */
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -338,71 +407,6 @@ body {
 }
 /* End of credits */
 
-/* Roll group */
-#roll_grp {
-	position: absolute;
-	left: -50%;
-	bottom: -100%;
-	right: auto;
-	top: auto;
-}
-
-#roll_grp.pres {
-	left: 10%;
-	bottom: 10%;
-	right: auto;
-	top: auto;
-}
-
-#roll_grp.comp {
-	left: 75%;
-	bottom: 60%;
-}
-
-#roll {
-	background: url(../img/photoroll.svg);
-	background-size: 100%;
-	position: absolute;
-	width: 246px;
-	height: 120px;
-	left: 80px;
-	bottom: 110px;
-	transform:rotate(34deg);
-	-ms-transform:rotate(34deg); /* IE 9 */
-	-webkit-transform:rotate(34deg); /* Safari and Chrome */
-}
-
-#postit {
-	background-color: #F2E37B;
-	height: 260px;
-	width: 260px;
-	transform:rotate(15deg);
-	-ms-transform:rotate(15deg); /* IE 9 */
-	-webkit-transform:rotate(15deg); /* Safari and Chrome */
-	z-index: -1;
-}
-
-#postit span {
-	font-size: 170%;
-	position: relative;
-	bottom: -62%;
-	left: 4%;
-}
-
-#roll img {
-	width: 44.8%;
-}
-
-#neg1 {
-	margin-left: 3.6%;
-	margin-top: 6.5%;
-}
-
-#neg2 {
-	margin-left: 0.3%;
-}
-/* End of roll group */
-
 /* Sheet */
 #sheet {
 	background: url(../img/hoja.svg);
@@ -414,7 +418,7 @@ body {
 	top: -200%;	
 }
 
-#sheet.comp {
+#sheet.comp, #sheet.bibl {
 	top: 30%;
 }
 
@@ -432,6 +436,18 @@ body {
 	-webkit-transform:rotate(-15deg); /* Safari and Chrome */
 }
 
+#sheet div {
+	display: none;
+}
+
+#composition_text.comp {
+	display: block;
+}
+
+#bibl_text.bibl {
+	display: block;
+}
+
 /* End of sheet */
 
 /* Contact sheet */
@@ -446,11 +462,11 @@ body {
 }
 
 #contact_sheet_wrapper {
-	padding-bottom: 59.83%;
+	padding-bottom: 52.75%;
 	position:absolute;
 	left: 10%;
-	bottom: -200%;
-	width: 85%;
+	bottom: -250%;
+	width: 75%;
 }
 
 #contact_sheet_wrapper.focus{
@@ -532,7 +548,7 @@ body {
 	display:none;
 }
 
-#focus_activity.activ_focus_grey {
+#focus_activity.focus.activ_grey {
 	display:inline;
 }
 
@@ -587,5 +603,39 @@ body {
 }
 
 /* End of focus activity */
+
+/* Definition */
+#definition {
+	display: none;
+}
+
+#definition.def_grey {
+	display:inline;
+}
+
+.definition_text {
+	position: absolute;
+	color: #fff;
+	width: 40%;
+	right: 5%;
+}
+
+#definition img{
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	width: 40%;
+}
+
+#definition.definition_text, #definition img {
+	display: none;
+}
+
+.focus_def.focus.def_grey {
+	display: block !important;
+}
+
+/* End of definition */
+
 
 /** End of objects **/
