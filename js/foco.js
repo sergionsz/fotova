@@ -27,9 +27,9 @@ OP_DIV=25;
 OP_DELTA=1/OP_DIV
 
 $(document).ready(function() {
-	$("#focus_control input").change(changeFocus);
-	$("#focus_control input").val(OP_DIV).change();
-	$("#show_general input").change(showGeneral);
+	$("#focus_activity_control input").change(changeFocus);
+	$("#focus_activity_control input").val(OP_DIV).change();
+	$("#focus_activity_show_general input").change(showGeneral);
 	
 });
 
@@ -58,7 +58,7 @@ function changeFocus () {
 }
 
 function showGeneral () {
-	var ch = $("#show_general input").prop('checked');
+	var ch = $("#focus_activity_show_general input").prop('checked');
 	var photo = $("#focus_photo_main");
 	effect = 'fade';
 	if (ch){

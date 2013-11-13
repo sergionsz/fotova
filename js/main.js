@@ -50,9 +50,11 @@ function changeScreen(screen) {
 		if (screen == current_screen) {return;}
 		if (screen == 'ungrey') {
 			$('body').find('*').removeClass(current_screen);
+			$('#pencils').css('z-index','3');
 			screen = prev_screen;
 		} else if (screen.indexOf('grey') != -1){
 			$('body').find('*').addClass(screen);
+			$('#pencils').css('z-index','0');
 		} else {
 			$('body').find('*').switchClass(current_screen,screen,2000,'swing');
 		}
