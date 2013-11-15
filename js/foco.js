@@ -27,33 +27,24 @@ OP_DIV=25;
 OP_DELTA=1/OP_DIV
 
 $(document).ready(function() {
-	$("#focus_activity_control input").change(changeFocus);
-	$("#focus_activity_control input").val(OP_DIV).change();
+	$(".activity_control input").change(changeFocus);
+	$(".activity_control input").val(OP_DIV).change();
 	$("#focus_activity_show_general input").change(showGeneral);
-	
 });
 
 function changeFocus () {
 	focus = $(this).val();
-	switch(true) {
-		case focus<=OP_DIV+1:
-			opacity=1-OP_DELTA*focus;
-			$("#focus_photo_4").css('opacity',opacity);
-			$("#focus_photo_3").css('opacity',1);
-			$("#focus_photo_2").css('opacity',1);
-			break;
-		case focus>OP_DIV && focus<=OP_DIV*2:
-			opacity=1-OP_DELTA*(focus-20);
-			$("#focus_photo_4").css('opacity',0);
-			$("#focus_photo_3").css('opacity',opacity);
-			$("#focus_photo_2").css('opacity',1);
-			break;
-		case focus>OP_DIV*2 && focus<=OP_DIV*3:
-			opacity=1-OP_DELTA*(focus-40);
-			$("#focus_photo_4").css('opacity',0);
-			$("#focus_photo_3").css('opacity',0);
-			$("#focus_photo_2").css('opacity',opacity);
-			break;
+	photos = ($(this).attr('max')/OP_DIV) +1;
+	
+	stage = Math.floor(focus/OP_DIV)+1;
+	opacity = OP_DELTA*(OP_DIV - focus%(OP_DIV));
+	
+	for (i=1;i<stage; i++) {
+		$(".photo_"+i).css('opacity',0);
+	}
+	$(".photo_"+stage).css('opacity',opacity);
+	for (i=stage+1;i<=photos; i++) {
+		$(".photo_"+i).css('opacity',1);
 	}
 }
 

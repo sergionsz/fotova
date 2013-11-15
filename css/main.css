@@ -89,17 +89,31 @@ div.contain {
 }
 
 h2 {
-	font-family: arch_daughter;
-}
-
-h2 {
 	font-family: actor;
 }
 
 .text_block {
+	font-family: actor;
 	height: 75%;
 	margin: 5%;
 	overflow-y: auto;
+}
+
+.text_box {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius:15px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	width: 60%;
+	height: auto;
+	text-align: center;
+	overflow: auto;
+	max-height: 60%;
+}
+
+.text_box p{
+	padding: 5%;
 }
 
 /** End of general classes **/
@@ -377,10 +391,15 @@ body {
 	color: #ff4e00;
 }
 
-.credits_card .email {
+.credits_card .email,
+.credits_card .email:link,
+.credits_card .email:active {
+	font-family: arch_daughter;
+	font-weight: bold;
 	color: #666;
 	position: relative;
 	left: 15%;
+	text-decoration: none;
 }
 
 #cc_logo {
@@ -469,7 +488,8 @@ body {
 	width: 75%;
 }
 
-#contact_sheet_wrapper.focus{
+#contact_sheet_wrapper.focus,
+#contact_sheet_wrapper.depth {
 	bottom: -3%;
 }
 
@@ -499,36 +519,75 @@ body {
 	background-size:cover;
 }
 
-#cf1:before {
-	background-image: url(../img/foco/foco1.jpg);
-}
 #cf2 {
-	background-image: url(../img/foco/ejemplo1.jpg);
 	background-position: 83%;
 }
-#cf3:before {
-	background-image: url(../img/foco/foco2.jpg);
-}
 #cf4 {
-	background-image: url(../img/foco/ejemplo2.jpg);
 	background-position: 27%;
 }
-#cf5:before {
-	background-image: url(../img/foco/foco3.jpg);
-}
 #cf6 {
-	background-image: url(../img/foco/ejemplo3.jpg);
 	background-position: 54%;
 }
-#cf7 {
+
+/* Focus Images */
+#cf1.focus:before {
+	background-image: url(../img/foco/foco1.jpg);
+}
+#cf2.focus {
+	background-image: url(../img/foco/ejemplo1.jpg);
+}
+#cf3.focus:before {
+	background-image: url(../img/foco/foco2.jpg);
+}
+#cf4.focus {
+	background-image: url(../img/foco/ejemplo2.jpg);
+}
+#cf5.focus:before {
+	background-image: url(../img/foco/foco3.jpg);
+}
+#cf6.focus {
+	background-image: url(../img/foco/ejemplo3.jpg);
+}
+#cf7.focus {
 	background-image: url(../img/foco/foco4.jpg);
 }
-#cf8 {
+#cf8.focus {
 	background-image: url(../img/foco/foco5.jpg);
 }
-#cf9 {
+#cf9.focus {
 	background-image: url(../img/foco/foco6.jpg);
 }
+/* End of focus Images */
+
+/* Depth of field Images */
+#cf1.depth:before {
+	background-image: url(../img/profcampo/campo1.jpg);
+}
+#cf2.depth {
+	background-image: url(../img/profcampo/ejemplo1.jpg);
+}
+#cf3.depth:before {
+	background-image: url(../img/profcampo/campo2.jpg);
+}
+#cf4.depth {
+	background-image: url(../img/profcampo/ejemplo2.jpg);
+}
+#cf5.depth:before {
+	background-image: url(../img/profcampo/campo3.jpg);
+}
+#cf6.depth {
+	background-image: url(../img/profcampo/ejemplo3.jpg);
+}
+#cf7.depth {
+	background-image: url(../img/profcampo/campo4.jpg);
+}
+#cf8.depth {
+	background-image: url(../img/profcampo/campo5.jpg);
+}
+#cf9.depth {
+	background-image: url(../img/profcampo/campo6.jpg);
+}
+/* End of depth of field Images */
 
 #contact_sheet span{
 	font-family: arch_daughter;	
@@ -543,12 +602,32 @@ body {
 
 /* End of contact sheet */
 
-/* Focus activity */
-#focus_activity {
+/* Exercise */
+#exercise {
+	display: none;
+}
+
+#exercise.exr_grey {
+	display: inline;
+}
+#exercise .text_box {
+	display: none;
+}
+.focus_exr.focus,
+.depth_exr.depth {
+	display: block !important;
+}
+
+/* End of exercise */
+
+/* Focus & depth of field activities */
+#focus_activity,
+#depth_activity {
 	display:none;
 }
 
-#focus_activity.focus.activ_grey {
+#focus_activity.focus.activ_grey,
+#depth_activity.depth.activ_grey {
 	display:inline;
 }
 
@@ -559,15 +638,23 @@ body {
 	top: 0px;
 	left: 0px;
 	background-color: #000;
-	opacity:0.7;
+	opacity:0.8;
 	z-index: inherit;
 }
 
-#focus_activity_photos img {
+#focus_activity_photos img,
+#depth_activity_photos img {
 	position:absolute;
 	left:5%;
 	top:10%;
 	width:90%;
+}
+
+#depth_activity_photos img {
+	width: auto;
+	height: 90%;
+	left: 25%;
+	top:5%;
 }
 
 #focus_photo_main {
@@ -591,8 +678,18 @@ body {
 	width: 50%;
 }
 
+#depth_activity_control {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+}
+
 #focus_activity_control input {
-	width: 80%;
+	width: 85%;
+}
+#depth_activity_control input {
+	width: 98%;
 }
 
 #focus_activity_show_general {
@@ -602,7 +699,7 @@ body {
 	width: 12%;
 }
 
-#focus_activity_desc {
+.activity_desc {
 	color: #fff;
 	position: absolute;
 	bottom: 0%;
@@ -611,17 +708,19 @@ body {
 	padding: 0;
 	overflow-y: hidden;
 	height: 5%;
+	font-family: actor;
 }
 
-#focus_activity_desc:hover {
+.activity_desc:hover {
 	height: 50%;
+	overflow-y: auto;
 }
 
-#focus_activity_desc p {
+.activity_desc p {
 	padding: 0 2%;
 }
 
-/* End of focus activity */
+/* End of focus & depth of field activities */
 
 /* Definition */
 #definition {
@@ -656,7 +755,11 @@ body {
 .focus_def.focus.def_grey,
 .focus_exmpl1.focus.exmpl1_grey,
 .focus_exmpl2.focus.exmpl2_grey,
-.focus_exmpl2.focus.exmpl3_grey {
+.focus_exmpl2.focus.exmpl3_grey,
+.depth_def.depth.def_grey,
+.depth_exmpl1.depth.exmpl1_grey,
+.depth_exmpl2.depth.exmpl2_grey,
+.depth_exmpl2.depth.exmpl3_grey {
 	display: block !important;
 }
 
