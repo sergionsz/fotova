@@ -755,11 +755,11 @@ body {
 .focus_def.focus.def_grey,
 .focus_exmpl1.focus.exmpl1_grey,
 .focus_exmpl2.focus.exmpl2_grey,
-.focus_exmpl2.focus.exmpl3_grey,
+.focus_exmpl3.focus.exmpl3_grey,
 .depth_def.depth.def_grey,
 .depth_exmpl1.depth.exmpl1_grey,
 .depth_exmpl2.depth.exmpl2_grey,
-.depth_exmpl2.depth.exmpl3_grey {
+.depth_exmpl3.depth.exmpl3_grey {
 	display: block !important;
 }
 
