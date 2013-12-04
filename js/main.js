@@ -25,6 +25,8 @@
 
 /* This object is a list of dom objecs ids and the screens they fire */
 
+var KEYCODE_ESC = 27;
+
 current_screen = '';
 prev_screen = '';
 
@@ -39,26 +41,38 @@ $(document).ready(function() {
 	);
 	/* Added to change to presentation screen */
 	changeScreen('pres');
+	/* Esc key escapes from grey mode */
+	$(document).keydown(function(e) {
+		if (e.keyCode == KEYCODE_ESC) { changeScreen('ungrey') } 
+	});
 });
 
 /* Function to change the screen in a cool animated way */
 function changeScreen(screen) {
-	if (typeof screen == 'string' && screen == 'pres'){
+	if (screen == 'pres') {
 		$('body').find('*').addClass(screen,2000,'swing');
-	} else {
+	}
+	if (typeof screen != 'string') {
 		screen = $(this).attr('link');
-		if (screen == current_screen) {return;}
-		if (screen == 'ungrey') {
-			$('body').find('*').removeClass(current_screen);
-			$('#pencils').css('z-index','3');
-			screen = prev_screen;
-		} else if (screen.indexOf('grey') != -1){
-			$('body').find('*').addClass(screen);
-			$('#pencils').css('z-index','0');
-		} else {
-			$('body').find('*').switchClass(current_screen,screen,2000,'swing');
+	}	
+	if (screen == current_screen) {return;}
+	if (screen == 'ungrey') {
+		if (current_screen.indexOf('grey') == -1) {
+			return;
 		}
+		screen = ungrey();
+	} else if (screen.indexOf('grey') != -1){
+		$('body').find('*').addClass(screen);
+		$('#pencils').css('z-index','0');
+	} else {
+		$('body').find('*').switchClass(current_screen,screen,2000,'swing');
 	}
 	prev_screen = current_screen;
 	current_screen = screen;
+}
+
+function ungrey () {
+	$('body').find('*').removeClass(current_screen);
+	$('#pencils').css('z-index','3');
+	return prev_screen;
 }

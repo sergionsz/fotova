@@ -116,6 +116,13 @@ h2 {
 	padding: 5%;
 }
 
+img.intext_img {
+	position: static !important;
+	display: block !important;
+	text-align: center;
+	margin: 0 auto;
+}
+
 /** End of general classes **/
 
 body {
@@ -489,7 +496,8 @@ body {
 }
 
 #contact_sheet_wrapper.focus,
-#contact_sheet_wrapper.depth {
+#contact_sheet_wrapper.depth,
+#contact_sheet_wrapper.framing {
 	bottom: -3%;
 }
 
@@ -589,6 +597,36 @@ body {
 }
 /* End of depth of field Images */
 
+/* Depth of framing Images */
+#cf1.framing:before {
+	background-image: url(../img/encuadre/encuadre1.jpg);
+}
+#cf2.framing {
+	background-image: url(../img/encuadre/ejemplo1.jpg);
+}
+#cf3.framing:before {
+	background-image: url(../img/encuadre/encuadre2.jpg);
+}
+#cf4.framing {
+	background-image: url(../img/encuadre/ejemplo2.jpg);
+}
+#cf5.framing:before {
+	background-image: url(../img/encuadre/encuadre3.jpg);
+}
+#cf6.framing {
+	background-image: url(../img/encuadre/ejemplo3.jpg);
+}
+#cf7.framing {
+	background-image: url(../img/encuadre/encuadre4.jpg);
+}
+#cf8.framing {
+	background-image: url(../img/encuadre/encuadre5.jpg);
+}
+#cf9.framing {
+	background-image: url(../img/encuadre/encuadre6.jpg);
+}
+/* End of framing Images */
+
 #contact_sheet span{
 	font-family: arch_daughter;	
 	z-index: 2;
@@ -614,7 +652,8 @@ body {
 	display: none;
 }
 .focus_exr.focus,
-.depth_exr.depth {
+.depth_exr.depth,
+.framing_exr.framing {
 	display: block !important;
 }
 
@@ -722,6 +761,26 @@ body {
 
 /* End of focus & depth of field activities */
 
+/* Framing activity */
+#framing_activity {
+	display:none;
+}
+#framing_activity.framing.activ_grey {
+	display:inline;
+}
+#framing_activity_photo {
+	max-width: 100%;
+	max-height: 100%;
+}
+#framing_activity_wrapper {
+	position: absolute;
+	max-width: 90%;
+	max-height: 90%;
+	top: 5%;
+	left: 5%;
+}
+/* End of framing activity */
+
 /* Definition */
 #definition {
 	display: none;
@@ -741,11 +800,16 @@ body {
 	right: 5%;
 }
 
+.definition_text dt {
+	font-weight: bold;
+}
+
 #definition img{
 	position: absolute;
-	top: 10%;
+	top: 5%;
 	left: 5%;
-	width: 40%;
+	max-width: 40%;
+	max-height: 90%;
 }
 
 #definition .definition_text, #definition img {
@@ -759,7 +823,11 @@ body {
 .depth_def.depth.def_grey,
 .depth_exmpl1.depth.exmpl1_grey,
 .depth_exmpl2.depth.exmpl2_grey,
-.depth_exmpl3.depth.exmpl3_grey {
+.depth_exmpl3.depth.exmpl3_grey,
+.framing_def.framing.def_grey,
+.framing_exmpl1.framing.exmpl1_grey,
+.framing_exmpl2.framing.exmpl2_grey,
+.framing_exmpl3.framing.exmpl3_grey {
 	display: block !important;
 }
 
