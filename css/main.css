@@ -645,7 +645,7 @@ body {
 	display: none;
 }
 
-#exercise.exr_grey {
+#exercise.exr_gray {
 	display: inline;
 }
 #exercise .text_box {
@@ -665,12 +665,13 @@ body {
 	display:none;
 }
 
-#focus_activity.focus.activ_grey,
-#depth_activity.depth.activ_grey {
+#focus_activity.focus.activ_gray,
+#depth_activity.depth.activ_gray,
+#framing_activity.framing.activ_gray {
 	display:inline;
 }
 
-.grey_area {
+.gray_area {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -765,9 +766,6 @@ body {
 #framing_activity {
 	display:none;
 }
-#framing_activity.framing.activ_grey {
-	display:inline;
-}
 #framing_activity_photo {
 	max-width: 100%;
 	max-height: 100%;
@@ -786,10 +784,12 @@ body {
 	display: none;
 }
 
-#definition.def_grey,
-#definition.exmpl1_grey,
-#definition.exmpl2_grey,
-#definition.exmpl3_grey {
+#definition.def_gray,
+#definition.exmpl1_gray,
+#definition.exmpl2_gray,
+#definition.exmpl3_gray,
+#definition.video_gray
+ {
 	display:inline;
 }
 
@@ -812,23 +812,36 @@ body {
 	max-height: 90%;
 }
 
-#definition .definition_text, #definition img {
+#definition video{
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	height: auto;
+	width: 60%;
+}
+
+#definition .definition_text, #definition img, #definition video {
 	display: none;
 }
 
-.focus_def.focus.def_grey,
-.focus_exmpl1.focus.exmpl1_grey,
-.focus_exmpl2.focus.exmpl2_grey,
-.focus_exmpl3.focus.exmpl3_grey,
-.depth_def.depth.def_grey,
-.depth_exmpl1.depth.exmpl1_grey,
-.depth_exmpl2.depth.exmpl2_grey,
-.depth_exmpl3.depth.exmpl3_grey,
-.framing_def.framing.def_grey,
-.framing_exmpl1.framing.exmpl1_grey,
-.framing_exmpl2.framing.exmpl2_grey,
-.framing_exmpl3.framing.exmpl3_grey {
+.focus_def.focus.def_gray,
+.focus_exmpl1.focus.exmpl1_gray,
+.focus_exmpl2.focus.exmpl2_gray,
+.focus_exmpl3.focus.exmpl3_gray,
+.depth_def.depth.def_gray,
+.depth_exmpl1.depth.exmpl1_gray,
+.depth_exmpl2.depth.exmpl2_gray,
+.depth_exmpl3.depth.exmpl3_gray,
+.framing_def.framing.def_gray,
+.framing_exmpl1.framing.exmpl1_gray,
+.framing_exmpl2.framing.exmpl2_gray,
+.framing_exmpl3.framing.exmpl3_gray,
+.depth_video.depth.video_gray {
 	display: block !important;
+}
+
+.definition_text.text_block {
+	height: auto;
 }
 
 /* End of definition */

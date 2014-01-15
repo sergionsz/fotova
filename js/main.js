@@ -41,9 +41,9 @@ $(document).ready(function() {
 	);
 	/* Added to change to presentation screen */
 	changeScreen('pres');
-	/* Esc key escapes from grey mode */
+	/* Esc key escapes from gray mode */
 	$(document).keydown(function(e) {
-		if (e.keyCode == KEYCODE_ESC) { changeScreen('ungrey') } 
+		if (e.keyCode == KEYCODE_ESC) { changeScreen('ungray') } 
 	});
 });
 
@@ -56,12 +56,12 @@ function changeScreen(screen) {
 		screen = $(this).attr('link');
 	}	
 	if (screen == current_screen) {return;}
-	if (screen == 'ungrey') {
-		if (current_screen.indexOf('grey') == -1) {
+	if (screen == 'ungray') {
+		if (current_screen.indexOf('gray') == -1) {
 			return;
 		}
-		screen = ungrey();
-	} else if (screen.indexOf('grey') != -1){
+		screen = ungray();
+	} else if (screen.indexOf('gray') != -1){
 		$('body').find('*').addClass(screen);
 		$('#pencils').css('z-index','0');
 	} else {
@@ -71,8 +71,12 @@ function changeScreen(screen) {
 	current_screen = screen;
 }
 
-function ungrey () {
+function ungray () {
 	$('body').find('*').removeClass(current_screen);
 	$('#pencils').css('z-index','3');
+	$("video" ).each( function(){
+		this.pause();
+		this.load();
+	});
 	return prev_screen;
 }
