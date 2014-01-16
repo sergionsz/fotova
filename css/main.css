@@ -842,6 +842,7 @@ body {
 
 .definition_text.text_block {
 	height: auto;
+	max-height: 70%;
 }
 
 /* End of definition */
