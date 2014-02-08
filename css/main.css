@@ -751,9 +751,10 @@ body {
 	font-family: actor;
 }
 
-.activity_desc:hover {
+.activity_desc_over {
 	height: 50%;
 	overflow-y: auto;
+	z-index: 1000;
 }
 
 .activity_desc p {
@@ -766,9 +767,9 @@ body {
 #framing_activity {
 	display:none;
 }
-#framing_activity_photo {
-	max-width: 100%;
-	max-height: 100%;
+#framing_activity_photos {
+	position: absolute;
+	left: 15%;
 }
 #framing_activity_wrapper {
 	position: absolute;
@@ -836,7 +837,10 @@ body {
 .framing_exmpl1.framing.exmpl1_gray,
 .framing_exmpl2.framing.exmpl2_gray,
 .framing_exmpl3.framing.exmpl3_gray,
-.depth_video.depth.video_gray {
+.focus_video.focus.video_gray,
+.depth_video.depth.video_gray,
+.framing_video.framing.video_gray
+ {
 	display: block !important;
 }
 

@@ -23,9 +23,11 @@
    
 */
 
-/* This object is a list of dom objecs ids and the screens they fire */
-
 var KEYCODE_ESC = 27;
+
+/* Width and height percentage of the window */
+WIDTH_PERCENTAGE = 0.9;
+HEIGHT_PERCENTAGE = 0.9;
 
 current_screen = '';
 prev_screen = '';
@@ -44,6 +46,19 @@ $(document).ready(function() {
 	/* Esc key escapes from gray mode */
 	$(document).keydown(function(e) {
 		if (e.keyCode == KEYCODE_ESC) { changeScreen('ungray') } 
+	});
+	/* Add animations to Activities descriptions */
+	$(".activity_desc").hover(
+		function (){$(this).addClass('activity_desc_over',500);},
+		function (){$(this).removeClass('activity_desc_over',500);}
+	);
+	/* Add JCrop to Framing Activity */
+	window_h = $( window ).height();
+	window_w = $( window ).width();
+	$('#framing_activity_photo').Jcrop({
+		boxWidth: window_w*WIDTH_PERCENTAGE,
+		boxHeight: window_h*HEIGHT_PERCENTAGE,
+		bgOpacity: 0.1
 	});
 });
 

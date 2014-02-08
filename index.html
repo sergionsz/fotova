@@ -31,6 +31,7 @@
 	<title>Fotova</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -172,6 +173,14 @@
 		</div>
 		<img class="focus_exmpl3" src="img/foco/ejemplo3.jpg" alt="" title="" />
 		<!-- End of focus example3 -->
+		<!-- Focus video -->
+		<video class="focus_video" controls >
+			<source src="video/enfoque.mp4" type="video/mp4">
+			<source src="video/enfoque.ogg" type="video/ogg">
+			<source src="video/enfoque.webm" type="video/webm">
+			Su navegador no soporta la etiqueta video. De hecho, es sorprendente que haya llegado hasta aquí.
+		</video>
+		<!-- End of focus video -->
 		<!-- End of focus -->
 		<!-- Depth of field -->
 		<!-- Depth of field definition -->
@@ -289,6 +298,14 @@
 		</div>
 		<img class="framing_exmpl3" src="img/encuadre/ejemplo3.jpg" alt="" title="" />
 		<!-- End of framing example3 -->
+		<!-- Framing video -->
+		<video class="framing_video" controls >
+			<source src="video/encuadre.mp4" type="video/mp4">
+			<source src="video/encuadre.ogg" type="video/ogg">
+			<source src="video/encuadre.webm" type="video/webm">
+			Su navegador no soporta la etiqueta video. De hecho, es sorprendente que haya llegado hasta aquí.
+		</video>
+		<!-- End of framing video -->
 		<!-- End of framing -->
 	</div>
 	<!-- End definition, examples & video-->
@@ -342,11 +359,11 @@
 	<!-- Activity framing -->
 	<div id="framing_activity">
 		<div class="gray_area link" link="ungray"></div>
-		<div class="framing_activity_photos">
+		<div id="framing_activity_photos">
 			<img id="framing_activity_photo" src="img/encuadre/encuadre.jpg" alt="" title="" />
 		</div>
 		<div class="activity_desc control">
-			<p>Con el fin de ver cómo cambia la imagen al cambiar la composición, se parte de un plano General Panorámico, para que se puedan realizar un nuevos encuadres, claro esta, considerando lo aprendido en esta sesión (Tipos de planos, ángulos de visión y relación entre los diferentes elementos de la imagen).</p>
+			<p>Con el fin de ver cómo cambia la imagen al cambiar la composición, se parte de un plano General Panorámico, para que se puedan realizar nuevos encuadres, claro esta, considerando lo aprendido en esta sesión (Tipos de planos, ángulos de visión y relación entre los diferentes elementos de la imagen).</p>
 		</div>
 	</div>
 	<!-- End of activity framing -->
@@ -386,6 +403,7 @@
 	<!-- Scripts -->
 	<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
 	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/jquery.Jcrop.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 	<script src="js/foco.js" type="text/javascript"></script>
 	<!-- End of scripts -->
